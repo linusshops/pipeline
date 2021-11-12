@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+namespace waterloomatt;
+
+use Closure;
+
 class Pipeline
 {
     /**
@@ -96,7 +100,7 @@ class Pipeline
      *
      * @return Closure
      */
-    protected function carry()
+    protected function carry(): Closure
     {
         return function ($stack, $pipe) {
             return function ($passable) use ($stack, $pipe) {
@@ -119,7 +123,7 @@ class Pipeline
      * @param Closure $destination
      * @return Closure
      */
-    protected function prepareDestination(Closure $destination)
+    protected function prepareDestination(Closure $destination): Closure
     {
         return function ($passable) use ($destination) {
             return $destination($passable);

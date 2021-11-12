@@ -1,5 +1,7 @@
 <?php
 
+use waterloomatt\Pipeline;
+
 require_once(__DIR__ . '/src/Pipeline.php');
 
 
