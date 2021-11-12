@@ -1,18 +1,32 @@
 {
-  "name": "waterloomatt/pipeline",
-  "description": "A simple pipeline for step-by-step processing.",
-  "license": "proprietary",
-  "autoload": {
-    "psr-4": {
-      "\\": "tests/",
-      "LifeWorks\\": "src/"
+    "name": "waterloomatt/pipeline",
+    "description": "A simple tool for step-by-step processing.",
+    "keywords": [
+        "pipeline",
+        "step-by-step",
+        "processing",
+        "functional"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Matt Skelton",
+            "email": "waterloomatt@gmail.com",
+            "homepage": "https://mattskelton.ca",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "\\": "tests/",
+            "waterloomatt\\": "src/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
     }
-  },
-  "require-dev": {
-    "phpunit/phpunit": "^9.5",
-    "symfony/var-dumper": "^5.3"
-  },
-  "scripts": {
-    "test": "vendor/bin/phpunit"
-  }
 }
