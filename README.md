@@ -2,9 +2,18 @@
 
 [![waterloomatt / pipeline](https://github.com/waterloomatt/pipeline/actions/workflows/php.yml/badge.svg)](https://github.com/waterloomatt/pipeline/actions/workflows/php.yml)
 
+
 Based on [Laravel's pipeline](https://laravel.com/api/master/Illuminate/Pipeline/Pipeline.html), this little titan
 performs step-by-step processing over an object - any object.
 
+## Installation
+
+This package is currently in alpha and you should take care running it in anything beyond toy applications.
+That said, I have been using this pipeline class in production for well over a year without any issues.
+
+```composer require waterloomatt/pipeline:v0.0.1-alpha```
+
+## Overview
 Imagine an event happens in your system, like a CSV file is uploaded, and it triggers some actions,
 
 1. the file is validated (ex. size, extension, mime-type, etc.)
