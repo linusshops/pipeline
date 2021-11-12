@@ -24,4 +24,31 @@ class PipelineTest extends TestCase
 
         $this->assertEquals($document, $output);
     }
+
+    public function testArithmetic()
+    {
+        $pipes = [
+            function ($input, $next) {
+                $input = $input * 10;
+                return $next($input);
+            },
+
+            function ($input, $next) {
+                $input = $input / 5;
+                return $next($input);
+            },
+
+            function ($input, $next) {
+                $input = $input + 1;
+                return $next($input);
+            },
+        ];
+
+        $output = (new Pipeline())
+            ->send(10)
+            ->through($pipes)
+            ->thenReturn();
+
+        $this->assertEquals(21, $output);
+    }
 }
