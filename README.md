@@ -1,7 +1,7 @@
 # Pipeline - a simple step-by-step processing tool
 
 Based on [Laravel's pipeline](https://laravel.com/api/master/Illuminate/Pipeline/Pipeline.html), this little titan
-performs step-by-step processing over an object - any object.
+performs step-by-step processing over an object - any object. See https://laravel.com/docs/10.x/helpers#pipeline for more documentation.
 
 ## Installation
 
