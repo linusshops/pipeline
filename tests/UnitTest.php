@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
+namespace Linusshops\Pipeline\Tests;
+
+use Linusshops\Pipeline\Pipeline;
 use PHPUnit\Framework\TestCase;
-use waterloomatt\Pipeline;
 
-require_once(__DIR__ . '/../src/Pipeline.php');
-
-class PipelineTest extends TestCase
+class UnitTest extends TestCase
 {
     public function testEmptyPipeline()
     {
-        $document = new StdClass();
+        $document = new \StdClass();
         $document->title = 'Test Title';
         $document->author = 'Test Author';
         $document->body = 'Test Body';

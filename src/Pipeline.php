@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace waterloomatt;
+namespace Linusshops\Pipeline;
 
 use Closure;
 

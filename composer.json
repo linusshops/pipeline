@@ -1,5 +1,5 @@
 {
-    "name": "waterloomatt/pipeline",
+    "name": "linusshops/pipeline",
     "description": "A simple tool for step-by-step processing.",
     "keywords": [
         "pipeline",
@@ -19,8 +19,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "\\": "tests/",
-            "waterloomatt\\": "src/"
+            "Linusshops\\Pipeline\\Tests\\": "tests/",
+            "Linusshops\\Pipeline\\": "src/"
         }
     },
     "require-dev": {
