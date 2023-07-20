@@ -1,17 +1,13 @@
 # Pipeline - a simple step-by-step processing tool
 
-[![waterloomatt / pipeline](https://github.com/waterloomatt/pipeline/actions/workflows/php.yml/badge.svg)](https://github.com/waterloomatt/pipeline/actions/workflows/php.yml)
-
-
 Based on [Laravel's pipeline](https://laravel.com/api/master/Illuminate/Pipeline/Pipeline.html), this little titan
 performs step-by-step processing over an object - any object.
 
 ## Installation
 
-This package is currently in alpha and you should take care running it in anything beyond toy applications.
-That said, I have been using this pipeline class in production for well over a year without any issues.
+This package can be installed via composer. 
 
-```composer require waterloomatt/pipeline:v0.0.1-alpha```
+```composer require linusshops/pipeline```
 
 ## Overview
 Imagine an event happens in your system, like a CSV file is uploaded, and it triggers some actions,
@@ -56,7 +52,7 @@ $pipes = [
     ->thenReturn();
 ```
 
-Yip. It is that simple. Let's look at some examples. We'll start easy and work our way up.
+Yip. It is that simple. Let's look at some examples.
 
 ## Pipes can be closures
 
@@ -80,7 +76,6 @@ $pipes = [
         return $next($input);
     },
 ];
-
 
 $output = (new Pipeline())
     ->send(10)           // Start with 10
