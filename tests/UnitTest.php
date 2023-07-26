@@ -124,7 +124,7 @@ class UnitTest extends TestCase
         $expected = 'A';
 
         $pipes = [
-            fn($input, $next) => $next($input . 'B'),
+            fn($input, $next) => $next($input . 'A'),
             function ($input, $next) {
                 // Abort further processing by returning the current $input.
                 // The important part is that we don't call `$next($input)`.
