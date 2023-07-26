@@ -21,7 +21,7 @@ composer require linusshops/pipeline
 ```
 
 ## Tests
-Test can be run from PHPUnit. After installation run, 
+Tests can be run with PHPUnit. After installation run, 
 
 ```bash'
 vendor/bin/phpunit
