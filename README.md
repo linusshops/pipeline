@@ -68,9 +68,7 @@ Now, how does the pipeline do it?
     ->thenReturn();
 ```
 
-Each pipe will receive the file object and is free to do whatever it wants with it.
-
-When it is done it's work it can call the next pipe, or not. Let's look at some examples.
+Each pipe will receive the file object and is free to do whatever it wants with it. When it is done its work it can call the next pipe, or not. Let's look at some examples.
 
 ## Pipes can be classes
 ```php
