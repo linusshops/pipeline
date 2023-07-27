@@ -19,8 +19,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "Linusshops\\Pipeline\\Tests\\": "tests/",
-            "Linusshops\\Pipeline\\": "src/"
+            "LinusShops\\Pipeline\\Tests\\": "tests/",
+            "LinusShops\\Pipeline\\": "src/"
         }
     },
     "require-dev": {

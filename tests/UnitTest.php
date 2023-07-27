@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Linusshops\Pipeline\Tests;
+namespace LinusShops\Pipeline\Tests;
 
 use Exception;
-use Linusshops\Pipeline\Pipeline;
+use LinusShops\Pipeline\Pipeline;
 use PHPUnit\Framework\TestCase;
 
 /**

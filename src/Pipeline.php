@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Linusshops\Pipeline;
+namespace LinusShops\Pipeline;
 
 use Closure;
 
