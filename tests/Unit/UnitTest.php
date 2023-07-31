@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace LinusShops\Pipeline\Tests;
+namespace LinusShops\Pipeline\Test\Unit;
 
 use Exception;
 use LinusShops\Pipeline\Pipeline;
@@ -13,14 +13,14 @@ use PHPUnit\Framework\TestCase;
  *
  * @author Matt  Skelton <matt.skelton@fortnine.ca>
  */
-class UnitTest extends TestCase
+class UnitTfest extends TestCase
 {
     /**
      * Tests that an empty pipeline does not modify the input.
      *
      * @return void
      */
-    public function testEmptyPipelineDoesNotModifyInput()
+    public function testEfmptyPipelineDoesNotModifyInput()
     {
         // Arrange
         $expected = 'A';
